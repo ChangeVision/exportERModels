@@ -7,6 +7,7 @@
     <plugin.install>true</plugin.install>
     <astah.version>6.6</astah.version>
     <astah.edition>all</astah.edition>
+    <classpath>${astahPath}/astah-api.jar:${astahPath}/astah-pro.jar:target/classes</classpath>
   </properties>
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.change_vision.astah.api-sample</groupId>
@@ -15,6 +16,19 @@
   <packaging>jar</packaging>
   <name>Export ER Model sample</name>
   <description>Export ER Models from Astah sample script</description>
+  <profiles>
+    <profile>
+      <id>windows</id>
+      <activation>
+        <os>
+          <family>windows</family>
+        </os>
+      </activation>
+      <properties>
+        <classpath>${astahPath}\astah-api.jar;${astahPath}\astah-pro.jar;target\classes</classpath>
+      </properties>
+    </profile>
+  </profiles>
   <pluginRepositories>
     <pluginRepository>
       <id>local_astah_repository</id>
@@ -178,7 +192,7 @@
           <executable>java</executable>
           <arguments>
             <argument>-classpath</argument>
-            <argument>${astahPath}/astah-api.jar:${astahPath}/astah-pro.jar:target/classes</argument>
+            <argument>${classpath}</argument>
             <argument>com.change_vision.astah.apisample.ERModelCSVExporter</argument>
             <argument>${modelPath}</argument>
           </arguments>
