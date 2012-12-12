@@ -13,6 +13,17 @@ public class ERModelCSVExporter {
 
     private File modelFile;
     private AstahAPIUtil util = new AstahAPIUtil();
+    
+    public static void main(String[] args) {
+        if(args.length != 1){
+            System.err.println("Usage: java -cp [astah-api.jar and astah-pro.jar path] com.change_vision.astah.apisample.ERModelCSVExporter [target astah model]");
+            System.exit(1);
+        }
+        String filePath = args[0];
+        File file = new File(filePath);
+        ERModelCSVExporter exporter = new ERModelCSVExporter(file);
+        exporter.export();
+    }
 
     public ERModelCSVExporter(File modelFile) {
         this.modelFile = modelFile;
@@ -28,6 +39,7 @@ public class ERModelCSVExporter {
         printDomain();
         System.out.println();
         printEntity();
+        util.close();
     }
 
     /**

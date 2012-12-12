@@ -59,4 +59,12 @@ public class AstahAPIUtil {
         }
     }
 
+    /**
+     * プロジェクトを閉じます。
+     * close project.
+     */
+    public void close() {
+        getProjectAccessor().close();
+    }
+
 }
