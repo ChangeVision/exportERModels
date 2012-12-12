@@ -11,7 +11,7 @@ import com.change_vision.jude.api.inf.model.INamedElement;
 import com.change_vision.jude.api.inf.project.ProjectAccessor;
 import com.change_vision.jude.api.inf.project.ProjectAccessorFactory;
 
-public class AstahAPIUtil {
+public class AstahAPIWrapper {
     
     private ProjectAccessor getProjectAccessor(){
         try {

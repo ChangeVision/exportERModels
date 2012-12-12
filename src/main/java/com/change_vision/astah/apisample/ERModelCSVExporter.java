@@ -12,7 +12,7 @@ import com.change_vision.jude.api.inf.model.INamedElement;
 public class ERModelCSVExporter {
 
     private File modelFile;
-    private AstahAPIUtil util = new AstahAPIUtil();
+    private AstahAPIWrapper util = new AstahAPIWrapper();
     
     public static void main(String[] args) {
         if(args.length != 1){
