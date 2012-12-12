@@ -1,4 +1,5 @@
 # 指定したastahのモデルファイルのERモデルの情報を標準出力に出力する (APIサンプル)
+![image](https://github.com/ChangeVision/exportERModels/raw/master/doc/screenshots/exportERModels.png)
 
 ## 使い方
 

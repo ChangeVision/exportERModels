@@ -1,4 +1,5 @@
 # Export ER Model Information to standard output (API Sample)
+![image](https://github.com/ChangeVision/exportERModels/raw/master/doc/screenshots/exportERModels.png)
 
 ## How to use
 
