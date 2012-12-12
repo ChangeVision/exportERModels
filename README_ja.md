@@ -4,7 +4,7 @@
 ## 使い方
 
 1. [Astah Plug-in SDKをインストール(このサンプルのコンパイルと実行に利用します)](http://astah.change-vision.com/ja/plugin-tutorial/devenv.html)
-2. このリポジトリをcloneするか [ソースコードをダウンロードしてください。](https://github.com/ChangeVision/exportERModels/archive/mastar.zip)
+2. このリポジトリをcloneするか [ソースコードをダウンロードしてください。](https://github.com/ChangeVision/exportERModels/archive/master.zip)
 3. `astah-build` を実行してください
 4a. `astah-mvn -q exec:exec -DmodelPath=YOUR_MODEL_PATH` を実行するか、
 4b. `java -cp [astah-api.jar and astah-pro.jar path] com.change_vision.astah.apisample.ERModelCSVExporter [target astah model]`を実行してください。
