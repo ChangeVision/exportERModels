@@ -4,7 +4,7 @@
 ## How to use
 
 1. [Install Astah Plug-in SDK](http://astah.net/features/sdk)
-2. clone this repository or [download the source code](https://github.com/ChangeVision/exportERModels/archive/mastar.zip)
+2. clone this repository or [download the source code](https://github.com/ChangeVision/exportERModels/archive/master.zip)
 3. run `astah-build`
 4a. run `astah-mvn -q exec:exec -DmodelPath=YOUR_MODEL_PATH` or 
 4b. run `java -cp [astah-api.jar and astah-pro.jar path] com.change_vision.astah.apisample.ERModelCSVExporter [target astah model]`
