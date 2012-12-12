@@ -163,6 +163,27 @@
         <artifactId>astah-maven-plugin</artifactId>
         <version>0.9.3</version>
       </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.2.1</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>exec</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <executable>java</executable>
+          <arguments>
+            <argument>-classpath</argument>
+            <argument>${astahPath}/astah-api.jar:${astahPath}/astah-pro.jar:target/classes</argument>
+            <argument>com.change_vision.astah.apisample.ERModelCSVExporter</argument>
+            <argument>${modelPath}</argument>
+          </arguments>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
   <dependencies>
